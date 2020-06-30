@@ -65,84 +65,83 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+
         switch (v.getId()){
-            case R.id.num_cero;
+            case R.id.num_cero:
                 numero = numero + "0";
                 resultado.setText(numero);
                 break;
-            case R.id.num_uno;
+            case R.id.num_uno:
                 numero = numero + "1";
                 resultado.setText(numero);
                 break;
-            case R.id.num_dos;
+            case R.id.num_dos:
                 numero = numero + "2";
                 resultado.setText(numero);
                 break;
-            case R.id.num_tres;
+            case R.id.num_tres:
                 numero = numero + "3";
                 resultado.setText(numero);
                 break;
-            case R.id.num_cuatro;
+            case R.id.num_cuatro:
                 numero = numero + "4";
                 resultado.setText(numero);
                 break;
-            case R.id.num_cinco;
+            case R.id.num_cinco:
                 numero = numero + "5";
                 resultado.setText(numero);
                 break;
-            case R.id.num_seis;
+            case R.id.num_seis:
                 numero = numero + "6";
                 resultado.setText(numero);
                 break;
-            case R.id.num_siete;
+            case R.id.num_siete:
                 numero = numero + "7";
                 resultado.setText(numero);
                 break;
-            case R.id.num_ocho;
+            case R.id.num_ocho:
                 numero = numero + "8";
                 resultado.setText(numero);
                 break;
-            case R.id.num_nueve;
+            case R.id.num_nueve:
                 numero = numero + "9";
                 resultado.setText(numero);
                 break;
-            case R.id.resta
-            case R.id.resta
-                ;
+            case R.id.resta:
                 symbol = "-";
                 num1 = Integer.parseInt(numero);
                 numero = "";
                 break;
-            case R.id.suma;
+            case R.id.suma:
                 symbol = "+";
                 num1 = Integer.parseInt(numero);
                 numero = "";
                 break;
-            case R.id.division;
+            case R.id.division:
                 symbol = "/";
                 num1 = Integer.parseInt(numero);
                 numero = "";
                 break;
-            case R.id.multiplicacion;
+            case R.id.multiplicacion:
                 symbol = "x";
                 num1 = Integer.parseInt(numero);
                 numero = "";
                 break;
 
-            case R.id.igual;
+            case R.id.igual:
                 num2 = Integer.parseInt(numero);
 
                 switch (symbol){
-                    case "-";
+                    case "-":
                         resultado.setText("resultado" + (num1-num2));
                         break;
-                    case "+";
+                    case "+":
                         resultado.setText("resultado" + (num1+num2));
                         break;
-                    case "/";
+                    case "/":
                         resultado.setText("resultado" + (num1/num2));
                         break;
-                    case "X";
+                    case "X":
                         resultado.setText("resultado" + (num1*num2));
                         break;
                 }
@@ -151,7 +150,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 num2 = 0;
                 break;
 
-            case R.id.ce;
+            case R.id.ce:
                 symbol = "";
                 numero = "";
                 num1 = 0;
