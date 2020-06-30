@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 numero = "";
                 break;
             case R.id.multiplicacion:
-                symbol = "x";
+                symbol = "*";
                 num1 = Integer.parseInt(numero);
                 numero = "";
                 break;
@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     case "/":
                         resultado.setText("resultado" + (num1/num2));
                         break;
-                    case "X":
+                    case "*":
                         resultado.setText("resultado" + (num1*num2));
                         break;
                 }
